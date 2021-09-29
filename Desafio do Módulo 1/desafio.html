@@ -5,79 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="desafio.css">
 </head>
-<body> 
+<body id="body"> 
     <header>
 
     </header>
-    <nav>
-        
         <h2>OPTIONS</h2>
-        <select name="ordenacao" id="ordenacao">
-            <option value="" selected >Nome ascendente</option>
-            <option value="">Nome descendente</option>
-            <option value="">Salário ascendente</option>
-            <option value="">Salário descendente</option>
+        <select onchange="opcaoOrdenacao()" name="ordenacao" id="ordenacao">
+            <option value="1">Nome ascendente</option>
+            <option value="2" selected>Nome descendente</option>
+            <option value="3">Salário ascendente</option>
+            <option value="4">Salário descendente</option>
         </select>
-        <fieldset>
-            <legend>Filter by roles</legend>
-            <div>
-              <input type="checkbox" id="" name="" value="">
-              <label for="">Database Administrator</label>
-            </div>
-            <div>
-              <input type="checkbox" id="" name="" value="">
-              <label for="">Senior QA Analyst</label>
-            </div>
-            <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Junior QA Analyst</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Senior Web Designer</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Junior Web Designer</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Senior Web Developer</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Junior Web Developer</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Data Analyst</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Junior Deveps Engineer</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Senior Devops Engineer</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Network Administrator</label>
-              </div>
-              <div>
-                <input type="checkbox" id="" name="" value="">
-                <label for="">Project Manager</label>
-              </div>
-          </fieldset>
-        
-
-    </nav>
-    <main>
+    <div class="employees">
         <h2>EMPLOYEES</h2>
-    </main>
+        <div id="app"></div>
+        </table>  
+    </div>
+    <div class="fieldset">
+      <fieldset>
+          <legend>Filter by roles</legend>
+          <div>
+            <input type="checkbox" id="dba" name="dba" value="dba">
+            <label for="dba">Database Administrator</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sqa" name="dba" value="sqa">
+            <label for="sqa">Senior QA Analyst</label>
+          </div>
+          <div>
+              <input type="checkbox" id="jqa" name="jqa" value="jqa">
+              <label for="jqa">Junior QA Analyst</label>
+            </div>
+            <div>
+              <input type="checkbox" id="swd" name="swd" value="swd">
+              <label for="swd">Senior Web Designer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="jwd" name="jwd" value="jwd">
+              <label for="jwd">Junior Web Designer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="sdv" name="sdv" value="sdv">
+              <label for="sdv">Senior Web Developer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="jdv" name="jdv" value="jdv">
+              <label for="jdv">Junior Web Developer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="dta" name="dta" value="dta">
+              <label for="dta">Data Analyst</label>
+            </div>
+            <div>
+              <input type="checkbox" id="jde" name="jde" value="jde">
+              <label for="jde">Junior Deveps Engineer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="sde" name="sde" value="sde">
+              <label for="sde">Senior Devops Engineer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="nadm" name="nadm" value="nadm">
+              <label for="nadm">Network Administrator</label>
+            </div>
+            <div>
+              <input type="checkbox" id="pmn" name="pmn" value="pmn">
+              <label for="pmn">Project Manager</label>
+            </div>
+        </fieldset>
+      </div>
     <footer>
-
-    </footer>    
+    </footer>
+    <script src="desafio.js"></script>
+  
 </body>
 </html>
